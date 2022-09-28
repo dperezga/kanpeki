@@ -1,0 +1,107 @@
+/* RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+body {
+    background-color: #ffaa4d;
+}
+
+/* Main structure*/
+
+.logo {
+    position: absolute;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shadow {
+    box-shadow: 2px 2px 2px black;
+}
+
+.header {
+    position: relative;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.home {
+    background-image: url("../images/menu.svg");
+    background-size: 50px;
+    height: 100%;
+    right: 5%;
+    left: 85%;
+}
+
+.title {
+    position: absolute;
+    height: 100%;
+    line-height: 120px;
+    left: 0;
+    right: 15%;
+    margin-left: 40px;
+}
+
+.content {
+    position: fixed;
+    overflow-y: auto;
+    top: 120px;
+    bottom: 48px;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    background-color: red;
+    min-height: 48px;
+    min-width: 100vw;
+    bottom: 0;
+}
+
+.task {
+    position: relative;
+    height: 60px;
+    background-color: #fef4af;
+    margin: 5px 10px 0px 10px;
+}
+
+.checkbox {
+    background-image: url("../images/not_check_blk.svg");
+    left: 0%;
+    right: 90%;
+    height: 100%;
+}
+
+.name {
+    position: absolute;
+    height: 100%;
+    left: 10%;
+    line-height: 60px;
+}
+
+.status {
+    background-image: url("../images/time.svg");
+    right: 10%;
+    left: 80%;
+    height: 100%;
+}
+
+.fave {
+    background-image: url("../images/empty_star.svg");
+    right: 0;
+    left: 90%;
+    height: 100%;
+}
