@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="header">
+		<input type="text" class="task_name">
+		<div class="favorite_task"></div>
+	</div>
+	<div class="content">
+		<div class="task_estate">
+			<div class="task_done button">
+				<div class="text_estate"> Task Done</div>
+				<div class="icon_estate"></div>
+			</div>
+			<div class="task_stop button">
+				<div class="text_estate"> Stop Task</div>
+				<div class="icon_estate"></div>
+			</div>
+		</div>
+		<div class="task_details">
+			<div class="input_line">
+				<div>Description</div>
+				<input type="text">
+			</div>
+			<div class="input_line">
+				<div>List</div>
+				<input list="lists">
+				<datalist id="lists">
+					<option value="courses">
+					<option value="taches">
+				  </datalist>
+			</div>
+			<div class="input_line">
+				<div>Start Date</div>
+				<input type="date">
+			</div>
+			<div class="input_line">
+				<div>Deadline</div>
+				<input type="date">
+			</div>
+			<div class="countdown">Remaining Time: 0 day(s)</div>
+		</div>
+		<div class="task_options">
+			<div class="task_save button">
+				<div class="text_options"> Save</div>
+				<div class="icon_options"></div>
+			</div>
+			<div class="task_cancel button">
+				<div class="text_options"> Cancel</div>
+				<div class="icon_options"></div>
+			</div>
+			<div class="task_delete button">
+				<div class="text_options"> Delete </div>
+				<div class="icon_options"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
