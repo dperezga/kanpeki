@@ -16,7 +16,6 @@ html,body {
 body {
     background-color: #ffaa4d;
 }
-
 /* Main structure*/
 
 .logo {
@@ -58,17 +57,20 @@ body {
 .content {
     position: fixed;
     overflow-y: auto;
+    background-color: #ffaa4d;
     top: 120px;
-    bottom: 48px;
+    bottom: 50px;
     width: 100%;
 }
 
 .footer {
     position: fixed;
-    background-color: red;
-    min-height: 48px;
-    min-width: 100vw;
-    bottom: 0;
+    background-color: #fe8f47;
+    min-height: 50px;
+    width: 98%;
+    right: 1%;
+    bottom: 5px;
+    border-radius: 3px;
 }
 
 .task {
@@ -104,4 +106,14 @@ body {
     right: 0;
     left: 90%;
     height: 100%;
+}
+
+.add {
+    background-image: url("../images/add.svg");
+    height: 100%;
+    right: 5%;
+    left: 85%;
+}
+.footer>.name {
+    line-height: 50px;
 }
