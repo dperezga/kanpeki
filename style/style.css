@@ -25,7 +25,7 @@ body {
     background-position: center;
 }
 
-.shadow {
+.shadow, .button {
     box-shadow: 2px 2px 2px black;
 }
 
@@ -116,4 +116,93 @@ body {
 }
 .footer>.name {
     line-height: 50px;
+}
+
+.task_name {
+    position: absolute;
+    height: 30%;
+    right: 20%;
+    left: 1%;
+    bottom: 35%;
+    box-shadow:inset 0 0 5px black;
+}
+
+.task_status {
+    position: relative;
+    height: 50px;
+}
+
+.done {
+    position: absolute;
+    background-color: #fe8f46;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    left: 5%;
+    right: 50.5%;
+}
+
+.stop {
+    position: absolute;
+    background-color: #e96330;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    left: 50.5%;
+    right: 5%;
+}
+
+.done > .logo {
+    background-image: url("../images/check.svg");
+}
+
+.stop > .logo {
+    background-image: url("../images/delete.svg");
+}
+
+.button > .logo {
+    height: 100%;
+    right: 1%;
+    left: 80%;
+}
+.button {
+    color: white;
+}
+
+.task_status .name {
+    line-height: 40px;
+}
+
+.task_properties {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+}
+.task_properties > div {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    top: 5px;
+}
+.task_properties .name {
+    position: absolute;
+    font-size: 15px;
+    line-height: 40px;
+    height: 100%;
+    left: 5%;
+    right: 70%;
+}
+
+.countdown .name {
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.task_properties input {
+    position: absolute;
+    box-shadow:inset 0 0 5px black;
+    height: 80%;
+    left: 30%;
+    right: 2%;
 }
