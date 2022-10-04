@@ -170,11 +170,12 @@ body {
 }
 
 .task_status .name {
+    left: 20%;
     line-height: 40px;
 }
 
 .task_properties {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 200px;
 }
@@ -205,4 +206,58 @@ body {
     height: 80%;
     left: 30%;
     right: 2%;
+}
+.task_options {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+.task_options .button {
+    height: 40px;
+    margin: 5px 10px 5px 10px;
+}
+
+.task_options  .name {
+    position: absolute;
+    font-size: 18px;
+    line-height: 40px;
+    height: 100%;
+    left: 10%;
+    right: 70%;
+}
+
+.save {
+    background-color: #fe8f46;
+    position: relative;
+    height: 40px;
+    left: 0%;
+    right: 0;
+}
+.save .logo {
+    background-image: url("../images/save.svg");
+}
+.delete {
+    background-color: #e96330;
+    position: relative;
+    height: 40px;
+    left: 0%;
+    right: 0;
+}
+.delete .logo {
+    background-image: url("../images/delete.svg");
+}
+.cancel {
+    background-color: #ffc845;
+    position: relative;
+    height: 40px;
+    left: 0%;
+    right: 0;
+}
+.cancel .logo {
+    background-image: url("../images/close_menu.svg");
+}
+
+.button .logo {
+    background-size: 25px;
 }
