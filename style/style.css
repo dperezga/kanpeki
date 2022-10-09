@@ -7,10 +7,11 @@
 }
 
 
-html,body {
-    height: 100%;
-    overflow: hidden;
+body {
+    height: 100vh;
+    width: 100vw;
     font-size: 25px;
+    box-sizing: border-box;
 }
 
 body {
@@ -32,17 +33,19 @@ body {
 .header {
     position: relative;
     background-image: url("../images/bg.png");
-    background-size: cover;
+    background-size: 100% auto;
     height: 120px;
     margin-bottom: 20px;
 }
 
 .home {
     background-image: url("../images/menu.svg");
-    background-size: 50px;
+    background-size: 100% auto;
     height: 100%;
     right: 5%;
-    left: 85%;
+    width: 20vw;
+    max-width: 40px;
+    min-width: 50px;
 }
 
 .title {
@@ -187,7 +190,7 @@ body {
 }
 .task_properties .name {
     position: absolute;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 40px;
     height: 100%;
     left: 5%;
