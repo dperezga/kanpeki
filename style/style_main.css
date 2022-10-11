@@ -66,6 +66,10 @@ html,body {
     box-shadow: 2px 2px 2px black;
 }
 
+.button {
+    color: white;
+}
+
 .title {
     position: absolute;
     font-size: 0.8rem;
@@ -118,6 +122,128 @@ html,body {
     position: absolute;
     left: 5vw;
     font-size: 0.65rem;
-    color: white;
     width: 50vw;
+}
+
+/*Task Menu*/
+
+input {
+    box-shadow:inset 0 0 5px black;
+    text-align: center;
+}
+
+.task_name_input {
+    position: absolute;
+    height: 30%;
+    width: 70%;
+    left: 1vw;
+    top: 35%;
+    padding: 15px;
+}
+
+.task_status {
+    position: absolute;
+    left: 5vw;
+    width: 90vw;
+    height: 50px;
+    line-height: 50px;
+}
+
+.task_status > .button {
+    position: absolute;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    height: 100%;
+    width: 49.5%;
+}
+
+.task_status .name {
+    text-align: center;
+}
+
+.done {
+    left: 0;
+    background-image: url("../images/check.svg");
+    background-color: #fe8f46;
+}
+
+.stop {
+    right: 0;
+    background-image: url("../images/close_menu.svg");
+    background-color: #e96330;
+}
+
+.task_properties {
+    position: absolute;
+    width: 95vw;
+    left: 2.5vw;
+    top: calc(60px + 2vw);
+}
+
+.task_properties > div {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+.task_properties .name input{
+    position: absolute;
+}
+
+.task_properties .name{
+    position: absolute;
+    left: 0;
+}
+
+.task_properties input{
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 80%;
+}
+
+.countdown .name {
+    position: relative;
+    text-align: center;
+}
+
+.task_options {
+    position: absolute;
+    top: calc(60px + 2vw + 250px);
+    width: 95vw;
+    left: 2.5vw;
+}
+
+.task_options > div {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+
+.task_options .button {
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.task_options .name {
+    position: relative;
+    left: 5vw;
+}
+
+.save {
+    background-color: #fe8f46;
+    background-image: url("../images/save.svg");
+}
+
+.cancel {
+    background-color: #ffc845;
+    background-image: url("../images/close_menu.svg");
+}
+
+.delete {
+    background-image: url("../images/delete.svg");
+    background-color: #e96330;
 }
