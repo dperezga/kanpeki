@@ -259,11 +259,12 @@ input {
 
 .login_form {
     position: absolute;
-    width: 40vw;
+    width: 30vw;
     height: 30vh;
     top: 30vh;
-    left: 30vw;
+    left: 35vw;
     text-align: center;
+    border: solid 1px black;
 }
 
 .login_form input {
@@ -273,9 +274,9 @@ input {
 }
 
 .login_form .welcome {
-    font-size: 0.9rem;
+    font-size: 0.9;
     position: absolute;
-    top: 0;
+    top: 10%;
     height: 10%;
     width: 100%;
 }
@@ -287,11 +288,12 @@ input {
 
 .login_form .pswd {
     left: 0;
-    bottom: calc(40px + 5%);
+    top: 60%;
 }
 .login_form .login {
     position: absolute;
     background-color: #e96330;
+    font-size: 0.5rem;
     bottom: 0;
     height: 40px;
     line-height: 40px;
