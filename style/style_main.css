@@ -11,12 +11,15 @@
 
 html,body {
     position: relative;
-    background-color: #ffaa4d;
+    /*background-color: #ffaa4d;*/
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     font-size: 30px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../images/bglist.png");
+    background-size: auto 100%;
+    opacity: 1;
 }
 
 .header {
@@ -24,18 +27,20 @@ html,body {
     background-image: url("../images/bg.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 120px;
+    height: 110px;
     line-height: 120px;
     width: 100vw;
+    opacity: 1;
 }
 
 .content {
     position: absolute;
     height: auto;
-    top: 120px;
-    width: 100vw;
+    top: 115px;
+    width: 98vw;
     padding: 2vw;
     font-size: 0.6rem;
+    opacity: 1;
 }
 
 .footer {
@@ -47,9 +52,10 @@ html,body {
     background-size: auto 70%;
     right: 1vw;
     width: 98vw;
-    height: 50px;
+    height: 55px;
     line-height: 50px;
     bottom: 3px;
+    opacity: 1;
 }
 
 /*Specifc elements*/
@@ -72,7 +78,7 @@ html,body {
 
 .title {
     position: absolute;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     left: 2vw;
     width: 60vw;
     min-width: 140px;
@@ -81,16 +87,16 @@ html,body {
 .home {
     background-image: url("../images/menu.svg");
     right: 5vw;
-    width: 40px;
+    width: 45px;
 }
 
 .task {
     position: relative;
     background-color: #fef4af;
-    height: 50px;
+    height: 55px;
     line-height: 50px;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 4.5px;
 }
 
 .checkbox {
@@ -264,7 +270,6 @@ input {
     top: 30vh;
     left: 35vw;
     text-align: center;
-    border: solid 1px black;
 }
 
 .login_form input {
