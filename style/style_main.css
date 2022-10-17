@@ -18,7 +18,6 @@ html,body {
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     background-size: auto 100%;
-    opacity: 1;
 }
 
 .header {
@@ -29,7 +28,6 @@ html,body {
     height: 110px;
     line-height: 120px;
     width: 100vw;
-    opacity: 1;
 }
 
 .content {
@@ -39,7 +37,6 @@ html,body {
     width: 98vw;
     padding: 2vw;
     font-size: 0.6rem;
-    opacity: 1;
 }
 
 .footer {
@@ -54,7 +51,6 @@ html,body {
     height: 55px;
     line-height: 50px;
     bottom: 3px;
-    opacity: 1;
 }
 
 /*Specifc elements*/
@@ -105,12 +101,11 @@ html,body {
 }
 
 .finished {
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .task > .finished {
     background-image: url("../images/check_blk.svg");
-    opacity: 0.5;
 }
 
 .task_name {
@@ -118,6 +113,14 @@ html,body {
     left: calc(2vw + 45px);
     max-width: 60%;
     max-height: 50px;
+}
+
+.task_desc {
+    position: absolute;
+    font-size: 0.4rem;
+    left: calc(2vw + 45px);
+    line-height: 0;
+    bottom: 20%;
 }
 
 .status {
@@ -152,11 +155,12 @@ input {
 
 .task_name_input {
     position: absolute;
-    height: 30%;
-    width: 70%;
-    left: 1vw;
-    top: 35%;
-    padding: 15px;
+    font-size: 0.7rem;
+    height: 40%;
+    width: 79.5%;
+    left: 0.5%;
+    top: 30%;
+    padding: 5px;
 }
 
 .task_status {
@@ -173,7 +177,7 @@ input {
     background-repeat: no-repeat;
     background-position: 95% center;
     height: 100%;
-    width: 49.5%;
+    width: 48%;
 }
 
 .task_status .name {
@@ -181,21 +185,22 @@ input {
 }
 
 .done {
-    left: 0;
+    left: 1%;
     background-image: url("../images/check.svg");
     background-color: #fe8f46;
 }
 
 .stop {
-    right: 0;
+    right: 1%;
     background-image: url("../images/close_menu.svg");
     background-color: #e96330;
 }
 
 .task_properties {
     position: absolute;
-    width: 95vw;
-    left: 2.5vw;
+    font-size: 0.55rem;
+    width: 91vw;
+    left: 4.5vw;
     top: calc(60px + 2vw);
 }
 
@@ -203,6 +208,7 @@ input {
     position: relative;
     height: 50px;
     line-height: 50px;
+    margin-bottom: 0.6vw;
 }
 
 .task_properties .name input{
@@ -217,8 +223,8 @@ input {
 .task_properties input{
     position: absolute;
     right: 0;
-    width: 65%;
-    height: 80%;
+    width: 70%;
+    height: 100%;
 }
 
 .countdown .name {
@@ -228,27 +234,27 @@ input {
 
 .task_options {
     position: absolute;
-    top: calc(60px + 2vw + 250px);
-    width: 95vw;
+    top: 350px;
+    width: 93vw;
     left: 2.5vw;
 }
 
 .task_options > div {
     position: relative;
-    height: 50px;
+    height: 55px;
     line-height: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .task_options .button {
-    background-size: 30px;
+    background-size: 40px;
     background-repeat: no-repeat;
-    background-position: 95% center;
+    background-position: 92% center;
 }
 
 .task_options .name {
     position: relative;
-    left: 5vw;
+    left: 8vw;
 }
 
 .save {

@@ -1,31 +1,31 @@
 var tasks = [
     {
         name: "Wake Up",
-        description: "You should",
+        description: "to not be late",
         finished: true,
         fave: true
     },
     {
         name: "Eat",
-        description: "You should",
+        description: "to stay healthy",
         finished: true,
         fave: true
     },
     {
         name: "Run 5KM",
-        description: "You should",
+        description: "LMAO",
         finished: false,
         fave: true
     },
     {
         name: "rest",
-        description: "You should",
+        description: "yayyy",
         finished: true,
         fave: true
     },
     {
         name: "Call mom",
-        description: "You should",
+        description: "She loves you",
         finished: false,
         fave: false
     }
