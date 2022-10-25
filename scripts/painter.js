@@ -65,3 +65,15 @@ function fave_updater (target_task){
 function task_menu_painter () {
     $('.header').html(header_painter('task_menu'));
 }
+
+function button_painter (button_type, button_label) {
+    var button;
+    button = '<div class="button '+button_type+'">\
+    <div class="name">'+button_label+'</div>\
+    </div>';
+    return button;
+}
+
+function form_painter (nb_buttons, nb_inputs){
+
+}

@@ -17,7 +17,7 @@ html,body {
     overflow: hidden;
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
-    background-size: auto 100%;
+    background-size:  100% auto;
 }
 
 .header {
@@ -283,10 +283,10 @@ input {
 
 .login_form {
     position: absolute;
-    width: 30vw;
+    width: 25vw;
     height: 30vh;
     top: 30vh;
-    left: 35vw;
+    left: 37.5vw;
     text-align: center;
 }
 
@@ -297,16 +297,17 @@ input {
 }
 
 .login_form .welcome {
-    font-size: 0.9;
+    font-size: 0.8rem;
     position: absolute;
-    top: 10%;
+    top: 16%;
     height: 10%;
     width: 100%;
 }
 
 .login_form .username {
     left: 0;
-    top: 40%;
+    top: 42%;
+    /* opacity: 0.3; */
 }
 
 .login_form .pswd {
@@ -317,7 +318,7 @@ input {
     position: absolute;
     background-color: #e96330;
     font-size: 0.5rem;
-    bottom: 0;
+    bottom: 5%;
     height: 40px;
     line-height: 40px;
     width: 100%;
