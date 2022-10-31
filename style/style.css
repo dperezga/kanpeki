@@ -1,266 +1,329 @@
-/* RESET*/
+/* RESET */
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-
-body {
-    height: 100vh;
-    width: 100vw;
-    font-size: 25px;
     box-sizing: border-box;
 }
 
-body {
+/* Basic Structure */
+
+html,body {
+    position: relative;
     background-color: #ffaa4d;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    background-size:  100% auto;
 }
-/* Main structure*/
+
+.header {
+    position: absolute;
+    background-image: url("../images/bg.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 110px;
+    line-height: 120px;
+    width: 100vw;
+}
+
+.content {
+    position: absolute;
+    height: auto;
+    top: 115px;
+    width: 98vw;
+    padding: 2vw;
+    font-size: 0.6rem;
+}
+
+.footer {
+    position: absolute;
+    background-color: #fe8f47;
+    background-image: url("../images/add.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: auto 70%;
+    right: 1vw;
+    width: 98vw;
+    height: 55px;
+    line-height: 50px;
+    bottom: 3px;
+}
+
+/*Specifc elements*/
 
 .logo {
     position: absolute;
-    background-size: 35px;
-    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100% auto;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .shadow, .button {
     box-shadow: 2px 2px 2px black;
 }
 
-.header {
-    position: relative;
-    background-image: url("../images/bg.png");
-    background-size: 100% auto;
-    height: 120px;
-    margin-bottom: 20px;
-}
-
-.home {
-    background-image: url("../images/menu.svg");
-    background-size: 100% auto;
-    height: 100%;
-    right: 5%;
-    width: 20vw;
-    max-width: 40px;
-    min-width: 50px;
-}
-
-.title {
-    position: absolute;
-    height: 100%;
-    line-height: 120px;
-    left: 0;
-    right: 15%;
-    margin-left: 40px;
-}
-
-.content {
-    position: fixed;
-    overflow-y: auto;
-    background-color: #ffaa4d;
-    top: 120px;
-    bottom: 50px;
-    width: 100%;
-}
-
-.footer {
-    position: fixed;
-    background-color: #fe8f47;
-    min-height: 50px;
-    width: 98%;
-    right: 1%;
-    bottom: 5px;
-    border-radius: 3px;
-}
-
-.task {
-    position: relative;
-    height: 60px;
-    background-color: #fef4af;
-    margin: 5px 10px 0px 10px;
-}
-
-.checkbox {
-    background-image: url("../images/not_check_blk.svg");
-    left: 0%;
-    right: 90%;
-    height: 100%;
-}
-
-.name {
-    position: absolute;
-    height: 100%;
-    left: 10%;
-    line-height: 60px;
-}
-
-.status {
-    background-image: url("../images/time.svg");
-    right: 10%;
-    left: 80%;
-    height: 100%;
-}
-
-.fave {
-    background-image: url("../images/empty_star.svg");
-    right: 0;
-    left: 90%;
-    height: 100%;
-}
-
-.add {
-    background-image: url("../images/add.svg");
-    height: 100%;
-    right: 5%;
-    left: 85%;
-}
-.footer>.name {
-    line-height: 50px;
-}
-
-.task_name {
-    position: absolute;
-    height: 30%;
-    right: 20%;
-    left: 1%;
-    bottom: 35%;
-    box-shadow:inset 0 0 5px black;
-}
-
-.task_status {
-    position: relative;
-    height: 50px;
-}
-
-.done {
-    position: absolute;
-    background-color: #fe8f46;
-    height: 80%;
-    top: 10%;
-    bottom: 10%;
-    left: 5%;
-    right: 50.5%;
-}
-
-.stop {
-    position: absolute;
-    background-color: #e96330;
-    height: 80%;
-    top: 10%;
-    bottom: 10%;
-    left: 50.5%;
-    right: 5%;
-}
-
-.done > .logo {
-    background-image: url("../images/check.svg");
-}
-
-.stop > .logo {
-    background-image: url("../images/delete.svg");
-}
-
-.button > .logo {
-    height: 100%;
-    right: 1%;
-    left: 80%;
-}
 .button {
     color: white;
 }
 
+.title {
+    position: absolute;
+    font-size: 0.7rem;
+    left: 2vw;
+    width: 60vw;
+    min-width: 140px;
+}
+
+.home {
+    background-image: url("../images/menu.svg");
+    right: 5vw;
+    width: 45px;
+}
+
+.task {
+    position: relative;
+    background-color: #fef4af;
+    height: 55px;
+    line-height: 50px;
+    width: 100%;
+    margin-bottom: 4.5px;
+}
+
+.checkbox {
+    background-image: url("../images/not_check_blk.svg");
+    left: 2vw;
+    width: 30px;
+}
+
+.finished {
+    opacity: 0.2;
+}
+
+.task > .finished {
+    background-image: url("../images/check_blk.svg");
+}
+
+.task_name {
+    position: absolute;
+    left: calc(2vw + 45px);
+    max-width: 60%;
+    max-height: 50px;
+}
+
+.task_desc {
+    position: absolute;
+    font-size: 0.4rem;
+    left: calc(2vw + 45px);
+    line-height: 0;
+    bottom: 20%;
+}
+
+.status {
+    background-image: url("../images/time.svg");
+    width: 30px;
+    right: calc(2vw + 45px);
+}
+
+.star {
+    background-image: url("../images/empty_star.svg");
+    right: 2vw;
+    width: 30px;
+}
+.fave {
+    right: 2vw;
+    width: 30px;
+    background-image: url("../images/full_star.svg");
+}
+.footer > .name {
+    position: absolute;
+    left: 5vw;
+    font-size: 0.65rem;
+    width: 50vw;
+}
+
+/*Task Menu*/
+
+input {
+    box-shadow:inset 0 0 5px black;
+    text-align: center;
+}
+
+.task_name_input {
+    position: absolute;
+    font-size: 0.7rem;
+    height: 40%;
+    width: 79.5%;
+    left: 0.5%;
+    top: 30%;
+    padding: 5px;
+}
+
+.task_status {
+    position: absolute;
+    left: 5vw;
+    width: 90vw;
+    height: 50px;
+    line-height: 50px;
+}
+
+.task_status > .button {
+    position: absolute;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    height: 100%;
+    width: 48%;
+}
+
 .task_status .name {
-    left: 20%;
-    line-height: 40px;
+    text-align: center;
+}
+
+.done {
+    left: 1%;
+    background-image: url("../images/check.svg");
+    background-color: #fe8f46;
+}
+
+.stop {
+    right: 1%;
+    background-image: url("../images/close_menu.svg");
+    background-color: #e96330;
 }
 
 .task_properties {
-    position: relative;
-    width: 100%;
-    height: 200px;
+    position: absolute;
+    font-size: 0.55rem;
+    width: 91vw;
+    left: 4.5vw;
+    top: calc(60px + 2vw);
 }
+
+.task_id {
+    display: none;
+}
+
 .task_properties > div {
     position: relative;
-    height: 40px;
-    width: 100%;
-    top: 5px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0.6vw;
 }
-.task_properties .name {
+
+.task_properties .name input{
     position: absolute;
-    font-size: 1rem;
-    line-height: 40px;
+}
+
+.task_properties .name{
+    position: absolute;
+    left: 0;
+}
+
+.task_properties input{
+    position: absolute;
+    right: 0;
+    width: 70%;
     height: 100%;
-    left: 5%;
-    right: 70%;
 }
 
 .countdown .name {
-    right: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-}
-.task_properties input {
-    position: absolute;
-    box-shadow:inset 0 0 5px black;
-    height: 80%;
-    left: 30%;
-    right: 2%;
-}
-.task_options {
     position: relative;
-    width: 100%;
-    height: 160px;
+    text-align: center;
+}
+
+.task_options {
+    position: absolute;
+    top: 350px;
+    width: 93vw;
+    left: 2.5vw;
+}
+
+.task_options > div {
+    position: relative;
+    height: 55px;
+    line-height: 50px;
+    margin-bottom: 10px;
 }
 
 .task_options .button {
-    height: 40px;
-    margin: 5px 10px 5px 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 92% center;
 }
 
-.task_options  .name {
-    position: absolute;
-    font-size: 18px;
-    line-height: 40px;
-    height: 100%;
-    left: 10%;
-    right: 70%;
+.task_options .name {
+    position: relative;
+    left: 8vw;
 }
 
 .save {
     background-color: #fe8f46;
-    position: relative;
-    height: 40px;
-    left: 0%;
-    right: 0;
-}
-.save .logo {
     background-image: url("../images/save.svg");
 }
-.delete {
-    background-color: #e96330;
-    position: relative;
-    height: 40px;
-    left: 0%;
-    right: 0;
-}
-.delete .logo {
-    background-image: url("../images/delete.svg");
-}
+
 .cancel {
     background-color: #ffc845;
-    position: relative;
-    height: 40px;
-    left: 0%;
-    right: 0;
-}
-.cancel .logo {
     background-image: url("../images/close_menu.svg");
 }
 
-.button .logo {
-    background-size: 25px;
+.delete {
+    background-image: url("../images/delete.svg");
+    background-color: #e96330;
+}
+
+/*login*/
+
+.login_page {
+    font-size: 0.7rem;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_form {
+    position: absolute;
+    width: 25vw;
+    height: 30vh;
+    top: 30vh;
+    left: 37.5vw;
+    text-align: center;
+}
+
+.login_form input {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+}
+
+.login_form .welcome {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 16%;
+    height: 10%;
+    width: 100%;
+}
+
+.login_form .username {
+    left: 0;
+    top: 42%;
+    /* opacity: 0.3; */
+}
+
+.login_form .pswd {
+    left: 0;
+    top: 60%;
+}
+.login_form .login {
+    position: absolute;
+    background-color: #e96330;
+    font-size: 0.5rem;
+    bottom: 5%;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
 }
