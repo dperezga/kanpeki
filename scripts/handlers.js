@@ -31,13 +31,13 @@ function save_task () {
         current_task = new taskinator($('.task_name_input').val(), $('.description > input').val(), false, false, '', '');
         tasks.push(current_task);
     };
-    console.log(current_task);
     current_task.name = $('.task_name_input').val();
     current_task.description = $('.description > input').val();
     current_task.start_date = $('.date_start > input').val();
     current_task.end_date = $('.date_end > input').val();
     main_painter();
 }
+
 function delete_task() {
     var task_id = $('.task_id').text();
     tasks = tasks.filter(task => task.id != task_id);

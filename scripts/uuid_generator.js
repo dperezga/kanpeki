@@ -1,3 +1,8 @@
+/*
+Found it online, I didnt write it
+source: https://www.w3resource.com/javascript-exercises/javascript-math-exercise-23.php
+*/
+
 function create_UUID(){
     var dt = new Date().getTime();
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {

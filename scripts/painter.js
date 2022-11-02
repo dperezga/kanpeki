@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
 function main_painter(){
     var page_html = '';
-    page_html += header_painter('index');
+    page_html += header_painter('main_page');
     page_html += tasks_painter(tasks);
     page_html += button_painter('new_task footer', 'Add New Task');
     $('body').html(page_html);
@@ -14,10 +14,14 @@ function main_painter(){
 
 function header_painter(page, task) {
     var header;
-    var first_div = (page == 'task_menu') ? '<input type="text" class="task_name_input" placeholder="Task Name..." value="'+task.name+'">' : '<div class="title">All My Tasks</div>';
-    header = ''+first_div+'\
-    <div class="home logo"></div>';
-return ('<div class="header">'+header+'</div>');
+    switch (page) {
+        case 'task_menu':
+            header = '<input type="text" class="task_name_input" placeholder="Task Name..." value="'+task.name+'">';
+            return ('<div class="header">'+header+'<div class="home logo"></div></div>');
+        case 'main_page':
+            header = '<div class="title">All My Tasks</div>';
+            return ('<div class="header">'+header+'<div class="home logo"></div></div>');
+    };
 }
 
 function tasks_painter(tasks){
@@ -69,6 +73,7 @@ function content_painter(task) {
 function task_id_painter(task) {
     return ('<div class="task_id">'+task.id+'</div>');
 }
+
 function task_status_painter() {
     var status_html = '';
     status_html += button_painter('done', 'Task Done');
@@ -104,27 +109,4 @@ function countdown_painter (task) {
     return '<div class="countdown">\
     <div class="name">Remaining Time: '+countdown_calc(task)+' day(s)</div>\
 </div>';
-}
-
-function countdown_calc(task) {
-    const second = 1000;
-    const minute = second * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
-    var start_time = new Date(task.start_date).getTime();
-    var end_time = new Date(task.end_date).getTime();
-    var diff = end_time - start_time;
-    return (diff / day);
-}
-
-class taskinator {
-    constructor(t_name = '', t_desc, t_finished, t_fave, t_start, t_end) {
-        this.name = t_name;
-        this.description = t_desc;
-        this.finished = t_finished;
-        this.fave = t_fave;
-        this.start_date = t_start;
-        this.end_date = t_end;
-        this.id = create_UUID();
-    }
 }
