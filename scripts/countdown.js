@@ -1,7 +1,6 @@
 function countdown_calc(task) {
-    if (!task.end_date) {
+    if (!task.end_date)
         return(0);
-    }
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
